@@ -115,7 +115,7 @@ body {
   .gallery-item:hover p{
     opacity: 1;
   }
-  
+
   .gallery-item:hover {
     opacity: 0.7; /* Atenuación al pasar el mouse por encima */
   }
@@ -132,11 +132,24 @@ body {
     justify-content: space-around;
   }
   
-  .footer-section {
-    /* Estilos para las divisiones del footer */
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0px -3px 10px rgba(0, 0, 0, 0.1);
   }
   
-  /* Estilos para hacer el sitio web responsivo */
+  .footer-section {
+    transition: all 0.3s ease;
+  }
+  
+  .footer-section:hover {
+    transform: translateY(-5px); /* Efecto de elevación al pasar el mouse por encima */
+  }
+  
   @media (max-width: 768px) {
     /* Agrega estilos para pantallas más pequeñas aquí */
   }
