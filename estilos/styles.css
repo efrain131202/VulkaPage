@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: url(../img/0216880a55ee8f954228a1f8e3c21f8f.jpg);
+    background-color: white;
   }
 
   .header-image {
@@ -38,7 +38,7 @@ body {
   }
 
   .navbar{
-    background: url(../img/2d4cd068191bddd1d341c03e91e89f18.jpg);
+    background-color: black;
     color: #fff;
   }
   
@@ -120,12 +120,15 @@ body {
     padding: 20px;
   }
   
-  
+  .app
+  {
+    text-align: center;
+    color: black;  }
   footer {
-    background: url(../img/2d4cd068191bddd1d341c03e91e89f18.jpg);
+    background-color: black;
     color: #fff;
     text-align: center;
-    padding: 20px 0;
+    padding: 50px 0;
     display: flex;
     justify-content: space-around;
     box-shadow: 0px -3px 10px rgba(0, 0, 0, 0.1);
