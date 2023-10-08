@@ -4,7 +4,7 @@ body {
     padding: 0;
   }
   .header-image {
-    background-image: url('../img/premium_photo-1675876265594-cb4ea707a817.avif');
+    background-image: url('../img/robert-laursoo-WHPOFFzY9gU-unsplash.jpg');
     background-size: cover;
     background-position: center;
     height: 400px; 
@@ -34,20 +34,37 @@ body {
   .header-content h1:hover {
     transform: scale(1.1); 
   }
+
+  .navbar{
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+  }
   
   .navbar-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
-    background-color: #333;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
   }
   
   .logo {
-    color: #fff;
     font-size: 24px;
     font-weight: bold;
+  }
+
+  .burger-menu{
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+
+  .bar{
+    background-color: #fff;
+    height: 3px;
+    width: 25px;
+    margin: 3px 0;
+    transition: 0.4s;
   }
   
   .navbar-menu {
@@ -70,19 +87,41 @@ body {
   }
   
   @media (max-width: 768px) {
-    .navbar-container {
-      flex-direction: column;
-      align-items: flex-start;
+    .burger-menu{
+        display: flex;
     }
-  
+    
     .navbar-menu {
-      margin-top: 10px;
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      background-color: #333;
+      position: absolute;
+      top: 60px;
+      left: 0;
+    }
+
+    .navbar-menu.active{
+        display: flex;
     }
   
     .navbar-menu li {
-      margin: 5px 0;
+      margin: 10px 0;
     }
-  }
+
+    .burger-menu.active .bar:nth-child(1){
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .burger-menu.active .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    .burger-menu.active .bar:nth-child(3){
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+   }
+
   .gallery-item {
     width: 200px;
     height: 200px; 
@@ -147,9 +186,5 @@ body {
   }
   
   .footer-section:hover {
-    transform: translateY(-5px); /* Efecto de elevación al pasar el mouse por encima */
-  }
-  
-  @media (max-width: 768px) {
-    /* Agrega estilos para pantallas más pequeñas aquí */
+    transform: translateY(-5px);
   }
