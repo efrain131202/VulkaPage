@@ -80,7 +80,32 @@ body {
 
   .retro:active {
     transform: translate(0.125rem, 0.125rem);
-    box-shadow: 0.125rem 0.125rem #121212;}
+    box-shadow: 0.125rem 0.125rem #121212;
+  }
+
+  .items {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .item {
+    text-align: center;
+    margin: 0 20px;
+  }
+
+  .item img {
+    max-width: 100%;
+  }
+
+  .item {
+    transition: all 0.3s ease;
+  }
+  
+  .item:hover {
+    transform: translateY(-15px);
+  }
+
   
   .app{
     text-align: center;
@@ -152,3 +177,5 @@ footer .redes-sociales a{
  footer .redes-sociales .google:hover{
     background: #d62424;
  }
+
+ 
