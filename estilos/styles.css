@@ -6,218 +6,89 @@ body {
   }
   
   .header-image {
-    background: url('../img/robert-laursoo-WHPOFFzY9gU-unsplash.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 400px; 
-    position: relative;
-  }
-  
-  .header-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: #fff;
-    z-index: 1;
-  }
-  
-  .header-content h1 {
-    font-size: 36px;
-    margin-bottom: 10px;
-    transition: all 0.3s ease;
-  }
-  
-  .header-content p {
-    font-size: 18px;
-  }
-  
-  .header-content h1:hover {
-    transform: scale(1.1); 
-  }
-
-  .navbar{
-    background-color: black;
-    color: #fff;
-  }
-  
-  .navbar-container {
-    display: flex;
-    justify-content: space-between;
+    border-radius: 25px 25px 25px 25px;
+    justify-content: center;
     align-items: center;
-    padding: 20px;
-  }
-  
-  .logo {
-    font-size: 24px;
-    font-weight: bold;
-  }
-
-  .menu.toggle{
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-  }
-
-  .bar{
-    background-color: #fff;
-    height: 3px;
-    width: 25px;
-    margin: 3px 0;
-    transition: 0.4s;
-  }
-  
-  .navbar-menu {
-    list-style: none;
     display: flex;
   }
-  
-  .navbar-menu li {
-    margin: 0 15px;
-  }
-  
-  .navbar-menu a {
-    text-decoration: none;
-    color: #fff;
+
+  .header-image {
     transition: all 0.3s ease;
   }
   
-  .navbar-menu a:hover {
-    color: #f39c12;
+  .header-image:hover {
+    transform: translateY(-5px);
   }
   
-  @media (max-width: 768px) {
+  .title{
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 25px;
+    font-size: 80px;
+  }
 
-    .menu.toggle{
-        display: flex;
-    }
-    .navbar-container {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-  
-    .navbar-menu {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        background-color: #333;
-        position: absolute;
-        top: 60px;
-        left: 0;
-    }
+  .title1{
+    font-size: 40px;
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 5px;
+  }
 
-    .navbar-menu.active{
-        display: flex;
-    }
-  
-    .navbar-menu li {
-      margin: 10px 0;
-    }
+  .container {
+    transition: all 0.3s ease;
   }
   
-  .acerca-de {
+  .container:hover {
+    transform: translateY(-15px);
+  }
+  
+
+  .p1{
+    text-align: center;
+    color: darkgray;
+    margin-bottom: 50px;
+  }
+  .btn1 {
+    align-items: center;
     text-align: center;
   }
 
-  .p2 {
+  .acerca-de{
     text-align: center;
+    color: #121212;
+    margin-bottom: 50px;
   }
-  .gallery {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 800px;
-    margin: 0 auto;
-}
 
-.gallery-item {
-    flex: 1;
-    margin: 10px;
-    text-align: center;
-    position: relative;
-    overflow: hidden;
-}
-
-.gallery-item img {
-    width: 100%;
-    height: auto;
-    max-width: 100%;
-    transition: transform 0.3s ease;
-}
-
-.description {
-    background-color: rgba(0, 0, 0, 0.7);
-    color: #fff;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 10px;
-    transform: translateY(-100%);
-    transition: transform 0.3s ease;
-}
-
-.gallery-item:hover img {
-    transform: scale(1.1);
-}
-
-.gallery-item:hover .description {
-    transform: translateY(0);
-}
-
-/* galeria 2 */
-
-.gallery2 {
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 800px; /* Cambia el valor según tus necesidades */
-  margin: 0 auto;
-}
-
-.gallery2-item {
-  flex: 1;
-  margin: 10px;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
-}
-
-.gallery2-item img {
-  width: 100%;
-  height: auto;
-  max-width: 100%;
-  transition: transform 0.3s ease;
-}
-
-.description {
-  background-color: rgba(0, 0, 0, 0.7);
-  color: #fff;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 10px;
-  transform: translateY(-100%);
-  transition: transform 0.3s ease;
-}
-
-.gallery2-item:hover img {
-  transform: scale(1.1);
-}
-
-.gallery2-item:hover .description {
-  transform: translateY(0);
-}
-
-
-  section {
-    padding: 20px;
+  .acerca{
+    padding: 70px;
   }
+  .retro{
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: black;
+    padding: 0.75rem 1rem;
+    border-radius: 0.45rem;
+    color: white;
+    border: solid 0.124rem #fff;
+    box-shadow: 0.25rem 0.25rem #fff;
+
+    transition:
+     transform 50ms, box-shadow 50ms;
+  }
+
+  .retro:active {
+    transform: translate(0.125rem, 0.125rem);
+    box-shadow: 0.125rem 0.125rem #121212;}
   
-  .app
-  {
+  .app{
     text-align: center;
     color: black;  
+  }
+
+  .descargas{
+    padding: 20px; 
   }
 
   footer {
@@ -228,6 +99,23 @@ body {
     display: flex;
     justify-content: space-around;
     box-shadow: 0px -3px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .foh4{
+    color: white;
+    
+    padding: 5px 0;
+    border-radius: 3px;
+    font-size: 30px;
+    margin: 0 20px;
+  }
+  .foh5{
+    color: white;
+    
+    padding: 5px 0;
+    border-radius: 3px;
+    font-size: 30px;
+    margin: 0 20px;
   }
   
   .footer-section {
@@ -248,7 +136,7 @@ footer .redes-sociales a{
     text-align: center;
     width: 40px;
     display: block;
-    padding: 5px 0;
+    padding: 50px 0;
     border-radius: 3px;
     font-size: 30px;
    margin: 0 20px;
