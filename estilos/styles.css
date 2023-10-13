@@ -132,6 +132,14 @@ body {
     text-align: center;
 }
 
+.cards {
+  transition: all 0.3s ease;
+}
+
+.cards:hover {
+  transform: translateY(-15px);
+}
+
 button {
     margin-top: 10px;
     padding: 10px 20px;
@@ -155,6 +163,13 @@ button:hover {
   margin-bottom: 100px;
 }
 
+.secciones {
+  transition: all 0.3s ease;
+}
+
+.secciones:hover {
+  transform: translateY(-15px);
+}
 .fila {
   display: flex;
   align-items: center;
