@@ -146,6 +146,19 @@ button:hover {
     background-color: #818181;
 }
 
+.cuestions{
+  align-items: center;
+}
+
+details {
+  margin-bottom: 20px;
+  align-items: center;
+  text-align: center;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
   
   .app{
     text-align: center;
