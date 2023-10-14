@@ -266,7 +266,6 @@ summary::-webkit-details-marker {
   }
   .foh5{
     color: white;
-    
     padding: 5px 0;
     border-radius: 3px;
     font-size: 30px;
@@ -294,7 +293,7 @@ footer .redes-sociales a{
     padding: 50px 0;
     border-radius: 3px;
     font-size: 30px;
-   margin: 0 20px;
+    margin: 0 20px;
 }
 
   footer .redes-sociales .facebook:hover{
@@ -306,6 +305,13 @@ footer .redes-sociales a{
  
  footer .redes-sociales .google:hover{
     background: #d62424;
+ }
+
+ .seccion-final{
+  text-align: center;
+  color: #fff;
+  background-color: black;
+  justify-content: center;
  }
 
  
