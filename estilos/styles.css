@@ -107,14 +107,18 @@ body {
     border: solid 0.124rem #fff;
     box-shadow: 0.25rem 0.25rem #fff;
     align-items: center;
-
-    transition:
-     transform 50ms, box-shadow 50ms;
+    transition: transform 50ms, box-shadow 50ms;
+    text-decoration: none;
   }
 
   .retro:active {
     transform: translate(0.125rem, 0.125rem);
     box-shadow: 0.125rem 0.125rem #121212;
+  }
+
+  .retro:hover{
+    
+    background-color: #818181;
   }
 
   .items {
