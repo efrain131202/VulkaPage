@@ -4,6 +4,30 @@ body {
     padding: 0;
     background-color: white;
   }
+  .navbar {
+    background-color: #fff;
+    overflow: hidden;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17.5px;
+}
+
+.navbar a:hover {
+    background-color: #818181;
+    color: black;
+}
   
   .header-image {
     border-radius: 25px 25px 25px 25px;
