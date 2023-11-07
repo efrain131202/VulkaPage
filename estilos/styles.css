@@ -97,6 +97,11 @@ body {
   .acerca{
     padding: 70px;
   }
+
+  .conditions{
+    align-items: center;
+    text-align: center;
+  }
   .retro{
     font-weight: 700;
     text-transform: uppercase;
