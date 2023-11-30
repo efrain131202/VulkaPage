@@ -24,7 +24,7 @@ body {
     font-size: 17.5px;
 }
 
-.navbar a:hover {
+  .navbar a:hover {
     background-color: #818181;
     color: black;
 }
@@ -36,6 +36,7 @@ body {
     display: flex;
     max-width: 100%;
     height: auto;
+    transition: transform 0.5s ease;
   }
 
     
@@ -50,15 +51,19 @@ body {
   }
   
   .header-image:hover {
-    transform: translateY(-5px);
+    transform: rotateY(180deg);
   }
   
   .title{
     background-color: white;
     color: black;
     text-align: center;
-    padding: 25px;
     font-size: 80px;
+  }
+
+  .slogan{
+    text-align: center;
+    margin-bottom: 75px;
   }
 
   .title1{
@@ -91,7 +96,6 @@ body {
   .acerca-de{
     text-align: center;
     color: #121212;
-    margin-bottom: 50px;
   }
 
   .acerca{
@@ -99,11 +103,10 @@ body {
   }
 
   .conditions{
-    align-items: center;
     text-align: center;
   }
   .retro{
-    font-weight: 700;
+    font-weight: 60px;
     text-transform: uppercase;
     background-color: black;
     padding: 0.75rem 1rem;

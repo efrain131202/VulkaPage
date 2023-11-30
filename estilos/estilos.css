@@ -5,17 +5,29 @@ body {
     background-color: white;
   }
 
-.title{
+.btn{
     background-color: white;
     color: black;
     text-align: center;
     padding: 25px;
     font-size: 80px;
+    text-decoration: none;
+    font-size: 80px;
+    font-weight: bold;
   }
 
   .title-container{
     align-items: center;
     text-align: center;
+    margin-top: 75px;
+  }
+
+  section {
+    padding: 30px;
+  }
+
+  span {
+    color: #121212;
   }
 
   .gallery-container {
@@ -55,11 +67,12 @@ body {
   .content{
     text-align: center;
     color: darkgray;
+    margin-top: 35px;
   }
 
 
   .retro{
-    font-weight: 700;
+    font-weight: 60px;
     text-transform: uppercase;
     background-color: black;
     padding: 0.75rem 1rem;
@@ -81,3 +94,83 @@ body {
     
     background-color: #818181;
   }
+
+  .text-container{
+    text-align: center;
+  }
+
+  .p1{
+    text-align: center;
+    color: darkgray;
+    margin-bottom: 50px;
+  }
+
+  footer {
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 50px;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0px -3px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .foh4{
+    color: white;
+    
+    padding: 5px 0;
+    border-radius: 3px;
+    font-size: 30px;
+    margin: 0 20px;
+  }
+  .foh5{
+    color: white;
+    padding: 5px 0;
+    border-radius: 3px;
+    font-size: 30px;
+    margin: 0 20px;
+  }
+  
+  .footer-section {
+    transition: all 0.3s ease;
+  }
+  
+  .footer-section:hover {
+    transform: translateY(-5px);
+  }
+   
+footer .redes-sociales .contenedor{
+    display: flex;
+    justify-content: center;
+}
+
+footer .redes-sociales a{
+    color: #fff;
+    text-align: center;
+    width: 40px;
+    display: block;
+    padding: 50px 0;
+    border-radius: 3px;
+    font-size: 30px;
+    margin: 0 20px;
+}
+
+  footer .redes-sociales .facebook:hover{
+    background: #3b5998;
+ }
+ footer .redes-sociales .instagram:hover{
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+ }
+ 
+ footer .redes-sociales .google:hover{
+    background: #d62424;
+ }
+
+ .seccion-final{
+  text-align: center;
+  color: #fff;
+  background-color: black;
+  justify-content: center;
+ }
+
+ 
